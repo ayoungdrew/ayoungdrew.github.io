@@ -41,6 +41,7 @@ h1 {
   font-family: 'Oswald', sans-serif;
 }
 
+
 .container {
   max-width: 1300px;
 }
@@ -51,4 +52,12 @@ h1 {
   width: 100%;
   text-align: center;
   transform: translateY(-50%);
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
 }
