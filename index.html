@@ -12,18 +12,15 @@
 <body>
   <nav class="navbar fixed-top navbar-light bg-light">
     <div class="container">
-      <ul class="nav container navbar-fixed-top">
+      <div class="navbar-header">
+          <a class="navbar-brand back-home" href="#">Andrew Young</a>
+        </div>
+      <ul class="nav navbar-fixed-top">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
+          <a class="nav-link active" href="./andrew_young_resume.pdf">Resume</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
     </div>
@@ -53,7 +50,7 @@
 
   <!-- Portfolio Modals Start -->
 
-  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal fade bd-example-modal-lg" id="project-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-body">
@@ -68,18 +65,31 @@
     </div>
   </div>
 
-  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal fade bd-example-modal-lg" id="project-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        ...
+        <div class="modal-body">
+          <h2>Challenge</h2>
+          <p>Create an app that users can use to journal their musical tastes.</p>
+          <h2>Approach</h2>
+          <p>Ruby on Rails was used as the back-end framework with Bootstrap with Javascript as the front-end technologies</p>
+          <h2>Results</h2>
+          <p>The finished project uses a relational databse (via Rails) that allows users to define musical "phases" with defined start and end dates that aggregate "favorite song" stories that serve as an anaecdote about a specific song during a time in the user's life.</p>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal fade bd-example-modal-lg" id="project-3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        ...
+      <div class="modal-body">
+        <h2>Challenge</h2>
+        <p>Create and deploy a full functional Tic Tac Toe game app onto the web. User should be able to sign up for a unique account and play games with another user on the same device.</p>
+        <h2>Approach</h2>
+        <p>Lorem ipsum</p>
+        <h2>Results</h2>
+        <p>Lorem ipsum</p>
+      </div>
       </div>
     </div>
   </div>
@@ -88,22 +98,22 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-4 col-sm-4" style="padding: 0;">
-        <a data-toggle="modal" data-target=".bd-example-modal-lg" href="img/portfolio/fullsize/1.jpg">
+        <a href="#" data-toggle="modal" data-target="#project-1">
           <div class="portfolio-button-caption">Tic Tac Toe
           </div>
           <img class="img-fluid" src="/assets/img/button_tic-tac-toe.jpg" alt="">
         </a>
       </div>
       <div class="col-lg-4 col-sm-4" style="padding: 0;">
-        <a href="img/portfolio/fullsize/1.jpg">
-          <div class="portfolio-button-caption">Project
+        <a href="#" data-toggle="modal" data-target="#project-2">
+          <div class="portfolio-button-caption">Life Soundtrack
           </div>
           <img class="img-fluid" src="/assets/img/button_roots.jpg" alt="">
         </a>
       </div>
       <div class="col-lg-4 col-sm-4" style="padding: 0;">
-        <a href="img/portfolio/fullsize/1.jpg">
-          <div class="portfolio-button-caption">Project
+        <a href="#" data-toggle="modal" data-target="#project-3">
+          <div class="portfolio-button-caption">Raindrop Shop
           </div>
           <img class="img-fluid" src="/assets/img/button_sunset.jpg" alt="">
         </a>
@@ -141,8 +151,7 @@
       </div>
       <div class="col-lg-8 img-fluid">
         <img src="assets/img/guy_a.jpg" class="img-fluid"
-        style="
-        bottom: 0; height: auto; width: auto; max-height: 600px;">
+        style="bottom: 0; height: auto; width: auto; max-height: 600px;">
       </div>
     </div>
   </div>
