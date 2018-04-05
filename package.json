@@ -10,6 +10,7 @@
     "grunt-regarde": "~0.1.1"
   },
   "dependencies": {
-    "grunt-contrib-jshint": "^1.1.0"
+    "grunt-contrib-jshint": "^1.1.0",
+    "hover.css": "^2.3.0"
   }
 }

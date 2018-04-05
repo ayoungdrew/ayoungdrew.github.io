@@ -5,7 +5,7 @@ module.exports = function(grunt) {
         connect: {
             server: {
                 options: {
-                    port: 8000, // custom port
+                    port: 3030, // custom port
                     base: '.', // current directory for 'index.html' is root
                     keepalive: true, // keep the server alive indefinitely
                     }
