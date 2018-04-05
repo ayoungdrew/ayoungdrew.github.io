@@ -1,31 +1,15 @@
 {
-  "name": "portfolio-site",
-  "version": "0.0.3",
-  "private": true,
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "grunt": "^1.0.2",
-    "jquery": "^3.1.1"
-  },
+  "name": "project",
+  "version": "0.1.0",
   "devDependencies": {
-    "eslint": "^3.15.0",
-    "eslint-config-standard": "^6.2.1",
-    "eslint-plugin-promise": "^3.4.1",
-    "eslint-plugin-standard": "^2.0.1"
+    "grunt": "~0.4.1",
+    "matchdep": "~0.1.2",
+    "grunt-contrib-livereload": "~0.1.2",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-open": "~0.2.0",
+    "grunt-regarde": "~0.1.1"
   },
-  "description": "[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ayoungdrew/portfolio-site.git"
-  },
-  "author": "Andrew Young <andrewyoung504@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/ayoungdrew/portfolio-site/issues"
-  },
-  "homepage": "https://github.com/ayoungdrew/portfolio-site#readme"
+  "dependencies": {
+    "grunt-contrib-jshint": "^1.1.0"
+  }
 }
