@@ -77,3 +77,11 @@ h1 h2 h3 {
   color: white;
   text-decoration: none;
 }
+
+svg path {
+  fill: #444c54;
+}
+
+.icon-spacing {
+  margin: -3px;
+}
