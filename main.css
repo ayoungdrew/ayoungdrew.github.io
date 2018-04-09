@@ -38,8 +38,8 @@ header {
     margin: 0 auto;
 }
 
-h1 {
-  font-family: 'Montserrat', sans-serif;
+h1 h2 h3 {
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
 }
 
 .navbar {
@@ -59,6 +59,7 @@ h1 {
 }
 
 .portfolio-button-caption {
+  height: 100%;
   font-size: 18px;
   color: white;
   display: flex;
@@ -67,15 +68,12 @@ h1 {
   text-align: center;
 }
 
-.portfolio-tile a:hover {
+.portfolio-button-caption a {
   color: white;
   text-decoration: none;
 }
 
-h2 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-h3 {
-  font-family: 'Oswald', sans-serif;
+.portfolio-tile a:hover {
+  color: white;
+  text-decoration: none;
 }
