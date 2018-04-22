@@ -4,7 +4,7 @@
 <head>
   <title>Andrew Young | Full-Stack Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link href='//cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="stylesheet" type="text/css" href="animate.css">
@@ -12,8 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway|Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
   <script src="index.js" type="text/javascript" charset="utf-8" defer></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -27,7 +26,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#work">work</a><i class="devicon-amazonwebservices-original"></i>
+          <a href="#work">work</a><i class="devicon-amazonwebservices-original"></i>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#about">about</a>
@@ -52,7 +51,7 @@
     <div class="container">
       <div class="row">
         <div id="test-div" class="col-xl-6">
-          <h1 class="test-text" style="font-size: 42px; font-weight: 700;">Developer. Designer.<br> Mediocre at Overwatch.</h1>
+          <h1 class="test-text" style="font-size: 42px; font-weight: 700;">[TEST]Developer. Designer.<br> Mediocre at Overwatch.</h1>
           <p>I'm a nerd with a past life in design and advertising. I also love photography and films. And my PC gaming skills pleateaued long ago. Let's collaborate!
           </p>
         </div>
@@ -63,9 +62,9 @@
     </div>
   </header>
 
-  <div class="container" id="work">
+  <div class="container">
     <div class="row">
-      <div class="col-lg-6" style="padding-top: 5vh;">
+      <div id="work" class="col-lg-6" style="padding-top: 5vh;">
 
         <h2>Work</h2>
           <hr>
@@ -172,8 +171,8 @@
       </div>
     </div>
   </div>
-  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   <script>
     $(".test-text, .portfolio-tile").hover(function() {
       $(this).addClass('hvr-sweep-to-top');
@@ -189,6 +188,43 @@
         }, 500);
       });
     });
+  </script>
+  <script>
+  function filterPath(string) {
+    return string
+        .replace(/^\//, '')
+        .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
+        .replace(/\/$/, '');
+}
+
+var locationPath = filterPath(location.pathname);
+$('a[href*="#"]').each(function() {
+    var thisPath = filterPath(this.pathname) || locationPath;
+    var hash = this.hash;
+    if ($("#" + hash.replace(/#/, '')).length) {
+        if (locationPath == thisPath && (location.hostname == this.hostname || !this.hostname) && this.hash.replace(/#/, '')) {
+            var $target = $(hash),
+                target = this.hash;
+            if (target) {
+                $(this).click(function(event) {
+                    if ($('#animation').prop('checked')) {
+                        event.preventDefault();
+                        $('html,body').animate({scrollTop: $target.offset().top}, 1000, function() {
+                            location.hash = target;
+                            $target.focus();
+                            if ($target.is(":focus")) { //checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); //Adding tabindex for elements not focusable
+                                $target.focus(); //Setting focus
+                            }
+                        });
+                    }
+                });
+            }
+        }
+    }
+});
   </script>
 </body>
 
