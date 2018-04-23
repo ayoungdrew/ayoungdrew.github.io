@@ -110,7 +110,9 @@ hr {
   text-align: left;
   display: inline-block;
 }
-
+.navbar {
+box-shadow: 0 0 15px 5px rgba(0,0,0,.1);
+}
 .navbar-brand a {
   color: #444c54;
 }
