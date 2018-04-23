@@ -194,8 +194,19 @@
     $(".test-text, .portfolio-tile").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function() {
       $(this).removeClass('hvr-sweep-to-top');
     });
-
   </script>
+  <script>
+  $(() => {
+      let scrollLink = $('.scroll')
+      scrollLink.click(function(e) {
+        e.preventDefault();
+        console.log('hey there visitor!')
+        $('body,html').animate({
+          scrollTop: $(this.hash).offset().top
+      }, 600 )
+      })
+  })
+</script>
 </body>
 
 </html>
