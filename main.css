@@ -38,7 +38,7 @@ header {
   color: #fff;
   background: linear-gradient(to bottom right, rgba(80, 90, 100, 0.6), rgba(68, 76, 84, 0.9)), url('./assets/icons/header-a.svg');
   /* background-color: rgba(80, 90, 100, 1); */
-  height: 50vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   display: flex;
