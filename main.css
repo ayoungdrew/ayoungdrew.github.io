@@ -130,6 +130,7 @@ box-shadow: 0 0 15px 5px rgba(0,0,0,.1);
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 10vh 5vw;
   text-align: center;
 }
 
@@ -175,5 +176,8 @@ svg path {
 @media (min-width: 1200px) {
   h1 {
     font-size: 54px;
+  }
+  .portfolio-button-caption {
+    padding: 10vh 10vw;
   }
 }
