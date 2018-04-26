@@ -143,6 +143,7 @@ hr {
 .navbar {
 box-shadow: 0 0 15px 5px rgba(0,0,0,.1);
 }
+
 .navbar-brand a {
   color: #444c54;
 }
@@ -215,8 +216,8 @@ svg path {
     padding: 40px 0;
   }
   .footer-icon {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
   .footer-left {
     justify-content: start;
