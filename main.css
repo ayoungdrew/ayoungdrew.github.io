@@ -41,6 +41,12 @@ a.footer-icon:after {
   margin: 30px 0 0 0;
 }
 
+.about-image {
+  height: auto;
+  width: auto;
+  max-height: 600px;
+}
+
 object {
   height: 50px;
 }
@@ -234,6 +240,9 @@ svg path {
 }
 
 @media (min-width: 992px) {
+  .about-image {
+    margin-top: 10px;
+  }
   h1 {
     font-size: 44px;
   }
@@ -246,6 +255,9 @@ svg path {
 }
 
 @media (min-width: 1200px) {
+  .about-image {
+    margin-top: 0;
+  }
   h1 {
     font-size: 54px;
   }
