@@ -37,6 +37,10 @@ a.footer-icon:after {
   left:0;
 }
 
+.about-text {
+  margin: 30px 0 0 0;
+}
+
 object {
   height: 50px;
 }
@@ -72,6 +76,10 @@ h1 {
 
 h2 {
   font-size: 30px;
+}
+
+h5 {
+  margin-bottom: 4px;
 }
 
 .navbar {
@@ -185,6 +193,9 @@ svg path {
 }
 
 @media (max-width: 575.98px) {
+  .about-text {
+    margin: 30px 0 0 0;
+  }
   .footer-icon {
     text-align: center;
   }
