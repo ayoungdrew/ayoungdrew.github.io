@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "atom": "^1.1.0",
-    "bootstrap": "^4.1.0",
+    "bootstrap": "^4.3.1",
     "grunt-contrib-jshint": "^1.1.0",
     "hover.css": "^2.3.0",
     "jquery": "^1.12.4",
