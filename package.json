@@ -14,7 +14,7 @@
     "bootstrap": "^4.1.0",
     "grunt-contrib-jshint": "^1.1.0",
     "hover.css": "^2.3.0",
-    "jquery": "^1.12.4",
+    "jquery": "^3.5.0",
     "popper.js": "^1.14.3",
     "prettier": "^1.18.2"
   }
